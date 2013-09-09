@@ -1,0 +1,62 @@
+
+/*=====================Fixes For IE lower then 9====================*/
+
+.lt-ie9 .portfolio-item .folio-body{
+	display:none !important;
+	background:#ff5d2a;
+}
+
+.lt-ie9 .portfolio-item:hover .folio-body{
+	display:block !important;
+}
+
+.lt-ie9 .portfolio-item .folio-body .folio-info{
+	display:none;
+}
+
+.lt-ie9 .portfolio-item:hover .folio-info{
+	display:block;
+}
+
+.img-circle{
+	position: relative;
+	z-index: 0;
+	behavior: url(assets/PIE.htc);
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner,
+.navbar.navbar-inverse .navbar-inner.sticky,
+.navbar.transparent.navbar-inverse .navbar-inner .container,
+.navbar.navbar-inverse .navbar-inner,
+.navbar-inverse .nav > li > a,
+.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a.active,
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a,
+.portfolio-item .folio-body,.mfp-fade.mfp-bg,.mfp-fade.mfp-bg.mfp-ready,
+.mfp-fade.mfp-bg.mfp-removing,.mfp-fade.mfp-wrap .mfp-content,
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content,.mfp-fade.mfp-wrap.mfp-removing .mfp-content,
+.tab-control a {
+	behavior: url(assets/PIE.htc);
+}
+
+.portfolio-item,.portfolio-item img,
+.portfolio-item .folio-body .folio-info,
+.portfolio-item:hover .folio-info,#newsletter #nl-email,#nl-go,
+.blog-pagination a,form#leave-comment input,form#leave-comment textarea,form#leave-comment button,
+.modal-footer ,#sub-email,#sub,.wrapper-icon,.process-icons,.wrapper-icon-big,
+ a.custom-large-btn,a.custom-normal-btn,a.custom-small-btn ,#newsletter #nl-name {
+	position: relative;
+	z-index: 0;
+	behavior: url(assets/PIE.htc);
+}
+
+
+
+
+
+
+
+
+
+
+
+
