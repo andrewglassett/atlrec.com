@@ -765,6 +765,30 @@ width: 95%;
 	font-size: 12px;
 }
 
+.projects article {
+min-height: 600px;
+color: #f6f6f6;
+padding: 90px 0;
+}
+li.portfolio-item {
+float: left;
+width: 390px;
+height: 225px;
+position: relative;
+}
+.portfolio-item .go {
+display: block;
+position: absolute;
+box-sizing: border-box;
+padding: 100px 20px 20px;
+width: 100%;
+height: 100%;
+border: none;
+font-size: 1em;
+background: rgba(16, 25, 34, 0.8);
+cursor: pointer;
+}
+
 /*==============pop-up==================*/
 .portfolio-item .folio-body .folio-zoom {
 	position: static;
