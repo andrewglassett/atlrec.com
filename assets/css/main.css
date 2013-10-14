@@ -26,6 +26,13 @@ img{
 	max-width: 100%;
 }
 
+ul {
+	list-style: none;
+}
+
+li{
+	font-family: "europa", sans-serif;
+}
 .default{
 	background: #000000;
 }
@@ -242,6 +249,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .navbar .nav>li>a {
 	padding:10px;
 	margin: 10px 20px;
+	font-family: "mono45-headline",sans-serif;
 }
 .header_sticky.header_bg1, .blog-style.header_bg1{
 	background:url("../img/background/header1.jpg") repeat scroll 0 0 transparent;
@@ -354,7 +362,7 @@ i {
 #work {
 	background: #000;
 	padding-bottom: 10em;
-	background:url("../img/demo/header/work2.jpg") #1a1a1a 50% 0 no-repeat fixed; min-height: 1000px;
+	background:url("../img/demo/header/work3.jpg") #1a1a1a 50% 0 no-repeat fixed; min-height: 1000px;
 	background-size:cover ;
 	/*background-repeat:repeat;*/
 	
@@ -772,8 +780,6 @@ padding: 90px 0;
 }
 li.portfolio-item {
 float: left;
-width: 390px;
-height: 225px;
 position: relative;
 }
 .portfolio-item .go {
@@ -789,6 +795,19 @@ background: rgba(16, 25, 34, 0.8);
 cursor: pointer;
 }
 
+.back {
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.portfolio-info{
+	font-family: "mono45-headline",sans-serif;
+	width:75px;
+	margin-right: 10px;
+	color:#ccc;
+	text-transform: uppercase;
+	display: inline-block;
+}
 /*==============pop-up==================*/
 .portfolio-item .folio-body .folio-zoom {
 	position: static;
@@ -970,6 +989,7 @@ cursor: pointer;
 	padding: 4% 0%;
 	text-decoration: none;
 	line-height: 1;
+	font-family: "mono45-headline",sans-serif;
 }
 .twitter-contact a:hover{
 	text-align: center;
