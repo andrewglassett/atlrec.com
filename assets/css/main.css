@@ -28,6 +28,7 @@ img{
 
 ul {
 	list-style: none;
+	margin:0 0 0 0;
 }
 
 li{
@@ -252,23 +253,16 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 	font-family: "mono45-headline",sans-serif;
 }
 .header_sticky.header_bg1, .blog-style.header_bg1{
-	background:url("../img/background/header1.jpg") repeat scroll 0 0 transparent;
-	
-}
-.header_sticky.header_bg2{
-	background:url("../img/background/header2.jpg") repeat scroll 0 0 transparent;
-	
-}
-.header_sticky.header_bg3{
-	background:url("../img/background/header3.jpg") repeat scroll 0 0 transparent;
+	background:url("../img/background/navbg.jpg") repeat scroll 0 0 transparent;
 	
 }
 
 #home {
 	position: relative;
-	background-color:#1a1a1a;
 	height:100vh;
-	min-height:1000px;
+	background:url("../img/background/home.jpg") #1a1a1a 50% 0 no-repeat fixed; min-height: 1000px;
+	background-size:cover;
+	background-repeat:no-repeat;
 
 }
 #home .home-text{
@@ -350,11 +344,7 @@ i {
 	margin:0;
 	padding:0;
 }
-.slide2{
-	background-image:url("../img/demo/header/slide3.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-}
+
 
 /*===============================
 4- Services
@@ -362,7 +352,7 @@ i {
 #work {
 	background: #000;
 	padding-bottom: 10em;
-	background:url("../img/demo/header/work3.jpg") #1a1a1a 50% 0 no-repeat fixed; min-height: 1000px;
+	background:url("../img/background/work.jpg") #1a1a1a 50% 0 no-repeat fixed; min-height: 1000px;
 	background-size:cover ;
 	/*background-repeat:repeat;*/
 	
@@ -527,7 +517,7 @@ width: 16.52991452991453%;
 }
 
 #about {
-	background:url("../img/demo/header/about.jpg") #FFF 50%; min-height: 1300px;
+	background:url("../img/background/about.jpg") #FFF 50%; min-height: 1300px;
 	position: relative;
 	padding-bottom: 30px;
 	padding-top: 0px;
@@ -960,7 +950,7 @@ cursor: pointer;
 	position: relative;
 	min-height: 400px;
 	margin-top: 0px;
-	background:url("../img/demo/header/work.png") #1a1a1a 50% 0 repeat fixed; min-height: 800px;
+	background:url("../img/background/contact.png") #1a1a1a 50% 0 repeat fixed; min-height: 800px;
 }
 
 #submit {
@@ -1988,7 +1978,7 @@ a.load-more{
 .mobile-menu {
 	display:none;
 }
-.navbar #orignal {
+.navbar #original {
 	display: block;
 }
 .navbar-inverse .brand {
