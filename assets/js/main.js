@@ -1,7 +1,7 @@
 $(function(){
 
 
-/*==============ScrollTOp=======================*/  
+/*==============ScrollTop=======================*/
 $('.navbar ul li a.scrol-it').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top-85
@@ -16,54 +16,46 @@ $('.go-btn a').click(function(){
     }, 1000);
     return false;
 });
-   
-
-/*==============Tooltip=======================*/
-	if ($("[data-rel=tooltip]").length) {
-     $("[data-rel=tooltip]").tooltip();
-	}
-
-	
+   	
 /*=============Flex slider======================*/
-$('#team-phone').flexslider({
+$('#team-phone1').flexslider({
   animation: "slide",
   directionNav: false,
   controlNav: true,
-  pauseOnHover: true, 
-  slideshowSpeed: 4000, 
+  pauseOnHover: true,
+  slideshowSpeed: 4000,
+  direction: "horizontal" //Direction of slides
+});
+$('#team-phone2').flexslider({
+  animation: "slide",
+  directionNav: false,
+  controlNav: true,
+  pauseOnHover: true,
+  slideshowSpeed: 5000,
+  direction: "horizontal" //Direction of slides
+});
+$('#team-phone3').flexslider({
+  animation: "slide",
+  directionNav: false,
+  controlNav: true,
+  pauseOnHover: true,
+  slideshowSpeed: 6000,
   direction: "horizontal" //Direction of slides
 });
 
-/*================Accordion===============*/
-$(".collapse").collapse({
-	parent: "#accordion2"
-});
-	
-$('.collapse').on('show hide', function (e) {
-	$(e.target).siblings('.accordion-heading').find('.btn-accordion span').toggleClass('icon-plus icon-minus', 200);
-});
-
-/*=====================tabs====================*/
-$('#tabs1 a').click(function (e) {
-	e.preventDefault();
-	$(this).tab('show');
-})
-
-
-
 //IE8-9 placeholder fix
-$('input[placeholder]').each(function(){  
-    var input = $(this);        
+$('input[placeholder]').each(function(){
+    var input = $(this);
     $(input).val(input.attr('placeholder'));
                 
     $(input).focus(function(){
-        if (input.val() == input.attr('placeholder')) {
+        if (input.val() === input.attr('placeholder')) {
            input.val('');
         }
     });
         
     $(input).blur(function(){
-       if (input.val() == '' || input.val() == input.attr('placeholder')) {
+       if (input.val() ==='' || input.val() === input.attr('placeholder')) {
            input.val(input.attr('placeholder'));
        }
     });
@@ -135,7 +127,6 @@ $(document).ready(function() {
 		}
 
 		$('.products-link').removeClass('open');
-		console.log('her');
 		$this.addClass('open');
 		$('.products article').hide();
 		$('#' + target).show();
@@ -164,23 +155,22 @@ $(document).ready(function() {
 
 /*=====================Parallax====================*/
 	$(document).ready(function(){
-	    $window = $(window);
-	    $('section[data-type="background"]').each(function(){
-	        var $bgobj = $(this); // assigning the object
-	     
-	        $(window).scroll(function() {
-	            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-	             
-	            // Put together our final background position
-	            var coords = '50% '+ yPos + 'px';
+		$window = $(window);
+		$('section[data-type="background"]').each(function(){
+		var $bgobj = $(this); // assigning the object
+		$(window).scroll(function() {
+		var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+		// Put together our final background position
+		var coords = '50% '+ yPos + 'px';
 	 
-	            // Move the background
-	            $bgobj.css({ backgroundPosition: coords });
-	        }); 
-	    });    
-	}); 
+		// Move the background
+		$bgobj.css({ backgroundPosition: coords });
+		});
+	});
+	});
 
 	
 	
 });
-})
+});
