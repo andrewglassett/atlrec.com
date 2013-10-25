@@ -3,7 +3,7 @@
 1-General Styles
 2-Navigation 
 3-Header/Home Section
-4-Services
+4-Work
 5-About US
 6-Our Projects
 7-Process 
@@ -13,7 +13,6 @@
 11-Newsletter
 12-Blog
 13-Footer
-14-Shortcodes
 15-Responsive
 
 =================================
@@ -52,9 +51,6 @@ li{
 	background-color: #e1472f;
 }
 
-.blog-style{
-	background-size:cover;
-}
 .style2{
 	background: url('../img/background/header_black.png') repeat;
 	background-size:cover;
@@ -254,7 +250,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 	margin: 10px 20px;
 	font-family: "mono45-headline",sans-serif;
 }
-.header_sticky.header_bg1, .blog-style.header_bg1{
+.header_sticky.header_bg1 {
 	background:url("../img/background/navbg.jpg") repeat scroll 0 0 transparent;
 	
 }
@@ -349,7 +345,7 @@ i {
 
 
 /*===============================
-4- Services
+4- Work
 =================================*/
 #work {
 	background: #000;
@@ -741,7 +737,7 @@ width: 95%;
 
 .portfolio-item:hover .folio-body {
 	height: 100%;
-    transition: all 200ms ease-in-out 0s;
+            transition: all 200ms ease-in-out 0s;
 	opacity: 1;
 }
 
@@ -776,25 +772,30 @@ width: 95%;
 }
 
 .projects article {
-min-height: 600px;
-color: #f6f6f6;
-padding: 90px 0;
+	color:#fff;
+	padding: 90px 0 0 0;
 }
+
+.projects article a{
+	border-bottom: 2px solid #fff;
+}
+
 li.portfolio-item {
-float: left;
-position: relative;
+	float: left;
+	position: relative;
 }
+
 .portfolio-item .go {
-display: block;
-position: absolute;
-box-sizing: border-box;
-padding: 100px 20px 20px;
-width: 100%;
-height: 100%;
-border: none;
-font-size: 1em;
-background: rgba(16, 25, 34, 0.8);
-cursor: pointer;
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 100px 20px 20px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 1em;
+	background: rgba(16, 25, 34, 0.8);
+	cursor: pointer;
 }
 
 .back {
@@ -802,7 +803,7 @@ cursor: pointer;
 	cursor: pointer;
 }
 
-.portfolio-info{
+.portfolio-info {
 	font-family: "mono45-headline",sans-serif;
 	width:75px;
 	margin-right: 10px;
@@ -1034,64 +1035,7 @@ cursor: pointer;
 	line-height: 18px;
 	margin-bottom: 30px;
 }
-.modal-footer .social li a{
-	margin-left:0px;
-}
 
-#sub-email {
-	background: #ffffff;
-	height: 26px;
-	border-radius: 4px 0 0 4px;
-}
-#sub {
-	height: 36px;
-	width: 44px;
-	background-color: #e1472f;
-	color: #ffffff;
-	margin-top: -10px;
-	margin-left: -5px;
-	font-weight: bold;
-	border: none;
-	border-radius: 0 4px 4px 0;
-}
-
-.footer-list {
-	margin-left: -2px;
-	list-style: none;
-	margin-top: -5px;
-	font-size: 12px;
-}
-.footer-list li {
-	line-height: 25px;
-}
-.footer-list a {
-	text-decoration: none;
-	color: #c3c3c3;
-}
-.footer-list a:hover {
-	color: #e1472f;
-}
-.modal-footer .social {
-	text-align: center;
-}
-
-
-.modal-footer .copyrights {
-	background: url("../img/footer-divider.png") repeat-x scroll center top transparent;
-	padding-top: 20px;
-	margin: 14px;
-}
-.modal-footer .copyrights span.detail {
-	display: inline-block;
-	color: #c3c3c3;
-	font-size: 12px;
-	margin-left: 5px;
-}
-.modal-footer .copyrights span.detail-icon {
-	display: inline-block;
-	color: #c3c3c3;
-	font-size: 11px;
-}
 .copyrights li {
 	display: inline-block;
 	list-style: none;
@@ -1105,7 +1049,6 @@ cursor: pointer;
 	font-family: 'europa', serif;
 	font-size: 12px
 }
-
 
 
 /*===============================
@@ -1463,24 +1406,8 @@ a.custom-small-btn span{
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	.modal-footer .social {
-	text-align: center;
-}
-.comments-wrapper{
-	margin-left:-60px;
-}
-.sidebar{
-	margin-left:0px;
-}
-.service-container{
-	max-width:280px;
-	margin:0 auto;
-	padding-left:30px;
-}
-.service-style2{
-	float:none;
-	margin-left:0px;
-}
+	
+
 #home .godown{	
 	left:37%;
 	height:70px;
@@ -1501,15 +1428,7 @@ a.custom-small-btn span{
 	margin-left: 36%;
 	margin-bottom: 5px;
 }
-.modal-footer {
-	text-align: center;
-}
-.modal-footer .social2 {
-	margin-left: 0px;
-}
-.modal-footer .footer-head {
-	text-align: center;
-}
+
 #services .media-body {
 	text-align: center;
 }
@@ -1525,14 +1444,8 @@ a.custom-small-btn span{
 	font-size: 40px;
 	padding-top: 35px;
 }
-.process-icons,.wrapper-icon-big {
-	
-	margin-left: auto;
-	margin-right: auto;
-}
-#process p {
-	margin: 30px auto;
-}
+
+
 .navbar-fixed-top, .navbar-fixed-bottom {
 	position: absolute;
 }
@@ -1555,13 +1468,12 @@ margin-top: 24%;
 
 }
 
-
 /* Landscape phones and down */
 @media (max-width: 480px) {
 .navbar.navbar-inverse .navbar-inner.sticky{
 }
 
-.header_sticky.header_bg1, .blog-style.header_bg1{
+.header_sticky.header_bg1, {
 	background: rgba(255, 93, 42, 1);
 	}
 #home .godown{	
@@ -1609,6 +1521,9 @@ margin-top: 24%;
 .twitter-contact{
 	font-size: 1em;
 }
-
+.projects article {
+	color:#fff;
+	padding: 0 0 0 0;
+}
 
 }
